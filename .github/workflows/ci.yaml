@@ -75,7 +75,7 @@ jobs:
     # Kubernetes 배포 YAML 파일(k8s/deployment.yaml)의 image 태그를 새로 빌드되는 이미지 태그로 업데이트합니다.
     - name: Update Deployment YAML
       run: |
-        sed -i 's|image: .*|image: 905418161761.dkr.ecr.ap-northeast-2.amazonaws.com/fs-petclinic-repo:${{ github.sha }}|' k8s/deployment.yaml
+        sed -i 's|image: .*|image: 869935083812.dkr.ecr.ap-northeast-2.amazonaws.com/fs-petclinic-repo:${{ github.sha }}|' k8s/deployment.yaml
 
     # 변경사항이 있으면 커밋하고 푸시합니다.
     # 변경된 k8s/deployment.yaml파일을 git에 push
